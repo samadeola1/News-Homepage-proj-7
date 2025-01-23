@@ -1,16 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="Assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              grayishBlue: "hsl(233, 8%, 79%)",
+              softred: "hsl(5, 85%, 63%)",
+              softorange: "hsl(35, 77%, 62%)",
+              offwhite: "hsl(36, 100%, 99%)",
+              DarkgrayishBlue: "hsl(236, 13%, 42%)",
+              VeryDarkBlue: " hsl(240, 100%, 5%)",
+            },
+            fontFamily: {
+              Inter: ['"Inter", serif;'],
+            },
+          },
+        },
+      };
+    </script>
     <title>News || page</title>
-</head>
-<body>
+  </head>
+  <body class="font-Inter">
     <!-- Nav -->
-     <nav>
-        <div>
-            <img src="Assets/logo.svg" alt="nav-logo">
-        </div>
-     </nav>
-</body>
+    <nav
+      class="container mx-auto p-[20px] lg:py-[58px] lg:px-[140px] flex justify-between items-center"
+    >
+      <!-- Nav logo -->
+      <div>
+        <img src="Assets/logo.svg" alt="nav-logo" />
+      </div>
+      <!-- nav items -->
+      <ul class="hidden md:flex gap-12 font-[400] text-DarkgrayishBlue">
+        <li class="hover:text-softred cursor-pointer">Home</li>
+        <li class="hover:text-softred cursor-pointer">New</li>
+        <li class="hover:text-softred cursor-pointer">Popular</li>
+        <li class="hover:text-softred cursor-pointer">Trending</li>
+        <li class="hover:text-softred cursor-pointer">Categories</li>
+      </ul>
+      <!-- menu-img -->
+      <div class="md:hidden">
+        <img src="Assets/icon-menu.svg" alt="menu-icon" />
+      </div>
+    </nav>
+    <!-- main -->
+    <main class="container mx-auto p-[20px] lg:py-[58px] lg:px-[140px]">
+      <!-- main section -->
+      <section class=" lg:grid grid-cols-3 gap-12">
+        <!-- section-1 -->
+        <section class="col-span-2">
+          <!-- div-1 -->
+          <div>
+            <img
+              src="Assets/image-web-3-desktop.jpg"
+              alt="image-web-3-desktop"
+              class="hidden md:block"
+            />
+            <img
+              src="Assets/image-web-3-mobile.jpg"
+              alt="image-web-3-mobile"
+              class="md:hidden"
+            />
+          </div>
+          <!-- div-2 -->
+          <div class="lg:grid grid-cols-2">
+            <h1 class="font-[800] text-[36px] md:text-[50px]">The Bright Future Of Web 3.0?</h1>
+            <div>
+              <p>
+                We dive into the next evolution of web that claims to put the
+                power of the platforms back into the hands of the people. But is
+                it really fulfilling its promise?
+              </p>
+              <button>READ MORE</button>
+            </div>
+          </div>
+        </section>
+        <!-- section-2 -->
+        <section>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam adipisci expedita repudiandae nisi facere laborum eum autem harum veritatis molestias! Facere incidunt adipisci minus vel dolor quo, aut perspiciatis veritatis illo eum hic deleniti natus modi laudantium assumenda sit eveniet quos illum dicta fugiat! Ad minus dolore omnis ratione architecto alias quo asperiores. Officiis architecto unde qui, doloremque, reprehenderit praesentium, itaque quia ut incidunt delectus animi voluptate culpa dolor eum. Veniam laborum fugit suscipit libero! Sapiente illo officia ut architecto nobis quisquam molestias, inventore quae modi non quas reprehenderit, voluptates beatae maiores! Quam veniam explicabo numquam quisquam dolores. Ab sed ut hic tenetur molestias? Sapiente ex laborum ut delectus nesciunt molestiae obcaecati cupiditate dolor maxime! Tempore voluptatum non odit fuga atque at tempora ea exercitationem optio veritatis blanditiis, laudantium dolorum reprehenderit possimus accusantium ullam reiciendis placeat. Architecto asperiores nisi iusto, omnis earum, possimus perferendis aspernatur soluta itaque distinctio quis non, et ut id. Qui velit earum officia animi sunt praesentium, esse quae ex facilis doloribus pariatur magnam culpa? Animi, iusto minus vitae cupiditate reprehenderit libero dolores temporibus quibusdam et laboriosam deserunt iure quam ex repellat numquam in consequuntur, voluptate, itaque maiores laborum odit officia repudiandae blanditiis inventore. Recusandae, beatae possimus.</p>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>
